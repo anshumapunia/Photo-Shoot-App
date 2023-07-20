@@ -5,7 +5,8 @@ body {
 }
 body::after {
     content: "";
-    background-image:url("https://wallpapers.com/images/hd/blurred-lights-dslr-camera-photography-z1z5nn4asvlk8cok.jpg");
+    /* background-image:url("https://wallpapers.com/images/hd/blurred-lights-dslr-camera-photography-z1z5nn4asvlk8cok.jpg"); */
+    background-image: url("https://www.shoppersphoto.ca/Themes/ShoppersPhoto/Images/Pages/Photobooks/Spring_2023/block1.jpg");
     background-size: cover;
     background-position: center center;
     position: fixed;
@@ -22,8 +23,8 @@ body::after {
 
 a {
     text-decoration: none;
-    color:rgb(182, 49, 35);
-    font-size: 1.5rem;
+    color:white;
+    font-size: 1.7rem;
 }
 
 #logo {
@@ -34,14 +35,21 @@ a {
 .logo_name>a>img {
     width: 25%;
     /* height: 5%; */
+    margin-top: 10px;
+    background-color: none;
 }
 
+.logo_name>a>img:hover {
+    /* background-color: maroon; */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.627);
+    background-color: rgba(51, 51, 51, 0.627);
     /* padding-top: 1rem; */
     /* padding-bottom: 1rem; */
     position: absolute;
@@ -54,9 +62,13 @@ nav {
 nav a:hover {
     /* color: #fb07aa; */
     /* text-decoration: underline #fb07aa ; */
-    color:rgb(204, 114, 100);
+    color: blue;
+    background-color:rgba(85, 17, 17, 0.217);
     text-decoration-thickness: 2px; 
     transition: text-decoration 0.3s;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: bolder;
   }
 
 nav.scrolled {
@@ -67,7 +79,12 @@ nav.scrolled {
 }
 
 nav.scrolled a {
-    color: black;
+    color: blue;
+    font-weight: bolder;
+}
+nav.scrolled a:hover{
+    color: white;
+    font-weight: lighter;
 }
 
 .nav-contents {
