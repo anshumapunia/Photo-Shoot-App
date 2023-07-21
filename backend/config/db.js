@@ -8,7 +8,7 @@ const connection = mongoose.connect(process.env.MONGO_URL);
 // Create Redis client
 function createRedisClient() {
   const client = createClient({
-    url:"redis://default:hjyrhdODecuRN9K7Jfa53RjwrtbAr0ry@redis-15375.c301.ap-south-1-1.ec2.cloud.redislabs.com:15375"
+    url:process.env.REDIS_URL,
   });
 
   // Handle Redis client errors

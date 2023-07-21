@@ -184,10 +184,10 @@ userRoute.post("/register", async (req, res) => {
 //       },
 //     });
 
-//     const BaseUrl_Backend = `https://angry-cummerbund-newt.cyclic.app`;
+//     const BaseUrl_Backend = `https://example.cyclic.app`;
 
 //     let mailOptions = {
-//       from: "kothawaderitesh2010.com",
+//       from: "rajneesh.com",
 //       to: email,
 //       subject: "User Verifecation Mail From Pic Perfect",
 //       html: `<p>hi ${name} <br> Please click here to <a href="${BaseUrl_Backend}/user/verify?id=${userid}">verify</a>  your mail. </p>`,
@@ -272,13 +272,13 @@ userRoute.post("/login", async (req, res) => {
 //     let transporter = nodemailer.createTransport({
 //       service: "gmail",
 //       auth: {
-//         user: "kothawaderitesh2010.com",
+//         user: "rajneesh.com",
 //         pass: process.env.googlepassword,
 //       },
 //     });
 
     // let mailOptions = {
-    //   from: "kothawaderitesh2010.com",
+    //   from: "rajneesh.com",
     //   to: email,
     //   subject: "OTP verifecation mail",
     //   html: `<p>HI ${name} <br> please use this OTP to update password.<br> ${otp} </p>`,

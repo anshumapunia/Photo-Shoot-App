@@ -34,7 +34,7 @@ authRoute.get(
 );
 
 authRoute.get("/google/failure", (req, res) => {
-    // res.redirect("https://bookmyshoot.netlify.app/login.html")
+    // res.redirect("https://example.app/login.html")
 })
 
 passport.use(
@@ -80,12 +80,12 @@ passport.use(
 //         let user = req.user;
 //         const token = jwt.sign({ userId: user._id }, process.env.secret, { expiresIn: '1hr' })
 
-//         res.redirect(`https://bookmyshoot.netlify.app/dashboard.html?id=${user._id}&token=${token}&role=${user.role}&approved=${user.approved}&username=${user.name}`);
+//         res.redirect(`https://example.app/dashboard.html?id=${user._id}&token=${token}&role=${user.role}&approved=${user.approved}&username=${user.name}`);
 //     }
 // );
 
 // authRoute.get("/github/failure", (req, res) => {
-//     res.redirect("https://bookmyshoot.netlify.app/login.html")
+//     res.redirect("https://example.app/login.html")
 // })
 
 // passportGithub.use(
@@ -93,7 +93,7 @@ passport.use(
 //         {
 //             clientID: process.env.GITHUB_CLIENT_ID,
 //             clientSecret: process.env.GITHUB_CLIENT_SECRET,
-//             callbackURL: "https://bookmyshoot-backend.onrender.com/auth/github/callback",
+//             callbackURL: "https://example.com/auth/github/callback",
 //             scope: "user:email",
 //         },
 //         async function (request, accessToken, refreshToken, profile, done) {
