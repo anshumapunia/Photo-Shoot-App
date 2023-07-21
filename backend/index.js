@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   try {
-    res.send({ ok: true, msg: "Welcome to Backend of Pic Perfect" });
+    res.send({ ok: true, msg: "Welcome to Backend" });
   } catch (error) {
     res.send({ ok: false, msg: error.message });
   }
