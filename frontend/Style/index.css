@@ -41,8 +41,8 @@ a {
 
 .logo_name>a>img:hover {
     /* background-color: maroon; */
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 nav {
     width: 100%;
@@ -66,8 +66,8 @@ nav a:hover {
     background-color:rgba(85, 17, 17, 0.217);
     text-decoration-thickness: 2px; 
     transition: text-decoration 0.3s;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     font-weight: bolder;
   }
 
@@ -86,7 +86,11 @@ nav.scrolled a:hover{
     color: white;
     font-weight: lighter;
 }
-
+.f1{
+    font-size: larger;
+    color: #1a06f4;
+    font-weight: bold;
+}
 .nav-contents {
     margin-left: -10%;
     display: flex;
@@ -108,11 +112,15 @@ video {
 
 .static_book {
    /* border: 2px solid  saddlebrown; */
+   /* border: red 5px solid; */
     text-align: center;
     padding: 3rem;
+    height: 340px;
     background-color: rgb(102, 158, 222);
     /* border: 2px solid blue; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px, rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+    margin-top: 320px;
+    background-image: url("https://images.zoomin.com/webresources/banners/600e1f095141.jpg");
 }
 
 .trust {
@@ -123,7 +131,19 @@ video {
     width: 90%;
     margin: auto;
 }
-
+.cb{
+    background-color: rgba(2, 90, 128, 0.654);
+    border: none;
+    width: 565px;
+    height: 60px;
+    border-radius: 2px;
+    font-size: larger;
+    margin-top: 20px;
+}
+.cb:hover{
+    background-color: rgb(36, 36, 251);
+    color: white;
+}
 .trust>div img {
     max-width: 50px;
 }
@@ -158,11 +178,24 @@ select option {
     width: 97%;
     font-family: 'Lato', sans-serif;
 }
-
+.overlay_booking{
+    margin-top: 80px;
+    margin-left: 250px;
+    margin-bottom: 280px;
+    width: 600px;
+    /* border: red solid 4px; */
+    /* border-radius: 550px; */
+    background-image: url("https://img.freepik.com/free-vector/elegant-business-shapes-transparent-background_1361-727.jpg?w=2000");
+    /* margin-bottom: 560px; */
+}
+.overlay_booking h1{
+    color: rgba(2, 90, 128, 0.654);
+    font-weight:800;
+}
 .overlay_booking input[type="submit"] {
     font-weight: bold;
     font-size: 17px;
-    
+
 
     background-color: #dd4545;
     /* color: white; */
@@ -511,6 +544,7 @@ input[type="submit"]:hover {
 
     .static_book {
         margin-top: 5%;
+        border: orangered solid 5px;
     }
 
     .overlay_booking input[type="submit"] {
