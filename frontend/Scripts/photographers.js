@@ -25,9 +25,7 @@ let count = document.getElementById("count_div")
 function Display(images, photographers) {
     container.innerHTML = null;
     count.innerHTML = null;
-    // console.log(photographer_images,"img");
-    // console.log(images,"images");
-    // console.log(photographers,"ph");
+
     let count_title = document.createElement("h4")
     count_title.innerText = +photographers.length + " Photographers😍";
     count.append(count_title)

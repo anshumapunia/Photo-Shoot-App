@@ -1,15 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   font-family: sans-serif;
-  background: #ddeefcd4;
+  background: rgb(186, 227, 186);
 }
 
 body::after {
   content: "";
-  background-image: url("https://img.freepik.com/premium-photo/info-graphics-business-pie-chart-character-person-with-modern-digital-photo-camera-3d-rendering_476612-21852.jpg?w=996");
+  /* background-image: url("https://img.freepik.com/premium-photo/info-graphics-business-pie-chart-character-person-with-modern-digital-photo-camera-3d-rendering_476612-21852.jpg?w=996"); */
   background-size: cover;
   background-position: center center;
   position: fixed;
@@ -23,23 +24,22 @@ body::after {
   z-index: -1;
 }
 
-
 /* Navbar */
 nav a {
   text-decoration: none;
-  color: rgba(253, 247, 247, 0.773);
+  color:rgb(9, 115, 175);
 }
-.logo_name>a>img {
+/* .logo_name > a > img {
   width: 70%;
   margin-left: 5%;
-}
+} */
 
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(11, 11, 11, 0.701);
+  background-color: rgb(212, 126, 173); /* Updated background color */
   height: 70px;
   position: fixed;
   top: 0;
@@ -55,40 +55,47 @@ nav {
 
 .nav-contents {
   display: flex;
-  gap: 3rem;
+  gap: 10rem;
 }
 
-.nav-contents>a:hover {
-  text-decoration: underline #fb07aa ;
+.nav-contents > a:hover {
+  /* text-decoration: underline #fb07aa ; */
   text-decoration-thickness: 2px; 
   transition: text-decoration 0.3s;
 }
 
-#head{
+#head {
   font-size: 25px;
   text-align: center;
+  color: rgb(0, 137, 123);
 }
-#info{
+#info {
   margin-top: 10px;
-  color: grey;
+  color: rgb(0, 137, 123);
 }
 form {
   margin-top: 30px;
 }
 
-label{
-  color: #000000;
+label {
+  color: rgb(77, 42, 81);
   font-weight: 500;
   margin-bottom: 5px;
 }
 input {
   border-radius: 5px;
-  border: 1px solid rgb(211, 202, 202);
+  border: 1px solid gray;
   margin-bottom: 5px;
   width: 90%;
   padding: 10px;
+  /* Updated background color and text color */
+  background-color:rgb(192, 213, 170);
+  color: rgb(212, 126, 173);
+  /* Center align the input box */
+  margin: 0 auto;
+  display: block;
 }
-input:focus{
+input:focus {
   outline: none;
   border: 1px solid #79A6FE;
 }
@@ -103,11 +110,11 @@ input:focus{
 }
 
 #dropZone.dragover {
-  background-color: lightgray;
+  background-color: rgb(106, 132, 79);
 }
 
-#main{
-  background-color: #ffffffc0;
+#main {
+  background-color: rgb(192, 213, 170);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 20px;
   width: 60%;
@@ -115,12 +122,11 @@ input:focus{
   margin-top: 78px;
   padding: 40px;
 }
-/* #main>div{
-  border: 1px solid red;
-} */
-#main>div:nth-child(1){
+
+#main > div:nth-child(1) {
   text-align: center;
 }
+
 #main_div {
   width: 90%;
   margin-bottom: 50px;
@@ -129,41 +135,30 @@ input:focus{
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  margin-top:-20px;
+  margin-top: -20px;
 }
 
 #drop_img {
   margin-top: 80px;
 }
-#main_div1{
+#main_div1 {
   width: 100%;
 }
 
-form > div{
+form > div {
   margin-top: 20px;
 }
 
-/* #main_div div { */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* border: 1px solid red; */
-/* } */
-/* #main_div>div { */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* border: 1px solid red; */
-/* } */
-
-#main_div>div:nth-child(1) {
-  width:65%;
+#main_div > div:nth-child(1) {
+  width: 65%;
   padding: 20px;
   border-radius: 20px;
 }
-#main_div>div:nth-child(2){
+#main_div > div:nth-child(2) {
   width: 230px;
 }
 
-#main_div>div img {
+#main_div > div img {
   margin-top: 20px;
   width: 100%;
 }
@@ -175,36 +170,37 @@ form > div{
   border-radius: 5px;
 }
 
-#submit_details{
+#submit_details {
   border: none;
   width: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #4080ffdf;
+  background-color: rgb(77, 42, 81);
   color: #fff;
 }
 
-#submit_details:hover{
+#submit_details:hover {
   cursor: pointer;
   background-color: #8daef0c7;
 }
 
-#upload_svg{
-  margin-bottom:80px;
+#upload_svg {
+  margin-bottom: 80px;
 }
+
 footer {
   display: flex;
   width: 100%;
   align-items: center;
   padding: 14px 0;
   justify-content: space-around;
-  background-color: rgba(136, 136, 136, 0.822);
+  background-color:rgb(2, 212, 206);
   position: absolute;
   bottom: 0;
 }
-footer div{
+footer div {
   display: flex;
   align-items: center;
 }
@@ -214,6 +210,12 @@ footer ul {
   gap: 2rem;
 }
 
+
+footer ul li {
+  display: flex;
+  gap: 2rem;
+  color:rgb(80, 62, 113);
+}
 footer ul li:nth-child(1) {
   list-style-type: none;
 }

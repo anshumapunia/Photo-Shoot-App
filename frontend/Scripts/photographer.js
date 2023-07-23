@@ -111,12 +111,7 @@ form.addEventListener("submit", async (e) => {
     const utcTime = selectedTime.toISOString();
     const utcTime2 = selectedTime2.toISOString();
 
-    // const token = localStorage.getItem("token");
-    // if (!token) {
-    //   console.error("Token is not available");
-    //   return;
-    // }
-
+  
     const req = await fetch(`${url}/book/book`, {
       method: "POST",
       headers: {
@@ -140,7 +135,7 @@ form.addEventListener("submit", async (e) => {
             footer: ``
         });
     }
-    // console.log(utcTime,utcTime2); // Output: UTC format of selected time
+   
 })
 
 
@@ -195,7 +190,7 @@ if (isUserName) {
     singupTag.style.display = "none"
     loginTag.textContent = "Hi," + " " + isUserName
     loginTag.style.color = "#dd4545"
-    loginTag.setAttribute("href", "../HTML/userDashboard.htmll");
+    loginTag.setAttribute("href", "./userDashboard.htmll");
 } else {
     singupTag.style.display = "block"
     loginTag.textContent = "Login"
