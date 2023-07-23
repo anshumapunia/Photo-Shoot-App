@@ -139,6 +139,7 @@ video {
     border-radius: 2px;
     font-size: larger;
     margin-top: 20px;
+    border-bottom-right-radius: 50px;
 }
 .cb:hover{
     background-color: rgb(36, 36, 251);
