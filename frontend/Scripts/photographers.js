@@ -25,52 +25,96 @@ let count = document.getElementById("count_div")
 function Display(images, photographers) {
     container.innerHTML = null;
     count.innerHTML = null;
-
+   
     let count_title = document.createElement("h4")
     count_title.innerText = +photographers.length + " Photographers😍";
     count.append(count_title)
+    // 
     photographers.forEach((photographer) => {
+        // ph div 
         let photographer_div = document.createElement("div");
-        let photographer_details = document.createElement("div");
-        let photographer_images = document.createElement("div");
-      
-        photographer_details.setAttribute("class", "details_div")
-        photographer_images.setAttribute("class", "images_div")
+        // pd detail div
+        // let photographer_details = document.createElement("div");
+        // ph img div
+        // let photographer_images = document.createElement("div");
+       
+        // claass for ph details    
+        // photographer_details.setAttribute("class", "details_div")
+        // photographer_images.setAttribute("class", "images_div")
+        // phdiv id
         photographer_div.setAttribute("id", `${photographer._id}`)
         photographer_div.setAttribute("class", "photographer_div")
-        let images_data;
-        for (let i = 0; i < images.length; i++) {
-            if (images[i]._id == photographer._id) {
-                images_data = images[i];
-                let name_div = document.createElement("div");
-                name_div.setAttribute("class", "name_div");
-                let book_div = document.createElement("div");
-                book_div.setAttribute("class", "book_div");
-                let view_profile = document.createElement("button");
-                view_profile.setAttribute("id", "view_profile")
-                view_profile.innerText = "View Profile"
-                let name = document.createElement("p");
-                name.innerText = photographer.name;
-                name.setAttribute("id", "name")
-                let price = document.createElement("p");
-                price.setAttribute("id", "price")
-                price.innerText = '\u20B9' + `${photographer.price} /hr`;
-                let location = document.createElement("p");
-                location.innerText = `\ud83d\udccd${photographer.address}`;
-                name_div.append(name, location)
-                book_div.append(price, view_profile)
-                photographer_details.append(name_div, book_div);
-                for (let i = 0; i < images_data.images.length; i++) {
-                    const img = new Image();
-                    img.src = `data:image/png;base64,${images_data.images[i]._id}`
-                    photographer_images.appendChild(img);
-                    photographer_div.append(photographer_images, photographer_details)
-                }
-                container.append(photographer_div)
-                // break;
+        // let imgdt=[]
+        // let images_data;
+        // photographer_div.innerHTML=photographer
+       
+        let price= document.createElement("p" )
+        price.setAttribute("id", "price")
+           price.innerHTML='PRICE '+'\u20B9'+photographer.price+"/Hr";
+        //    herrr
+        let email = document.createElement("p")
+        email.setAttribute("class", "book_div")
+        email.innerHTML="Email => " +photographer.email;
+        // 
+        let name = document.createElement("h3")
+        name.setAttribute("id", "name")
+        name.innerHTML="Name => "+photographer.name;
+        // 
+        let camera =document.createElement("p")
+        camera.setAttribute("class", "name_div");
+        camera.innerHTML="Camera => "+photographer.camera; 
+        let address =document.createElement("p")
+        address.setAttribute("class", "name_div");
+        address.innerHTML= "Address => "+photographer.address;
+        let view_profile = document.createElement("button");
+        view_profile.setAttribute("id", photographer._id); 
+        view_profile.addEventListener("click", (event) => {
+            
+                const photographerId = event.target.closest(".photographer_div").id;
+        
+                console.log(photographerId);
+                localStorage.setItem("photographerId", photographerId);
+                fetchProfilePage(photographerId);
+            
+        }); 
+        view_profile.innerText = "View Profile"
+        photographer_div.append(name,email,price,camera,address,view_profile)
+        
+        container.append(photographer_div)
+        // for (let i = 0; i < images.length; i++) {
+        //     // if (images[i]._id == photographer._id) {
+        //         images_data = images[i];
+        //         let name_div = document.createElement("div");
+        //         name_div.
+        //         // 
+        //         let book_div = document.createElement("div");
+        //         book_div.;
+        //         let view_profile = document.createElement("button");
+        //         view_profile
+        //        
+        //         let name = document.createElement("p");
+        //         name.innerText = photographer.name;
+        //         name.
+        //         let price = document.createElement("p");
+        //         price.
+        //         price.innerText = '\u20B9' + `${photographer.price} /hr`;
+        //         let location = document.createElement("p");
+        //         location.innerText = `\ud83d\udccd${photographer.address}`;
+        //         name_div.append(name, location)
+        //         book_div.append(price, view_profile)
+        //         photographer_details.append(name_div, book_div);
+        //         for (let i = 0; i < images_data.images.length; i++) {
+        //             const img = new Image();
+        //             img.src = `data:image/png;base64,${images_data.images[i]._id}`
+        //             photographer_images.appendChild(img);
+        //             photographer_div.append(photographer_images, photographer_details)
+        //         // }
+               
+        //         // break;
 
-            }
-        }
+        //     }
+        //     container.append(photographer_div)
+        // }
 
     })
 }
@@ -121,15 +165,7 @@ location_sort?.addEventListener("change", async () => {
 
 
 // for redirecting
-container?.addEventListener("click", (event) => {
-    if (event.target.id === "view_profile") {
-        const photographerId = event.target.closest(".photographer_div").id;
 
-        console.log(photographerId);
-        localStorage.setItem("photographerId", photographerId);
-        fetchProfilePage(photographerId);
-    }
-});
 
 
 function fetchProfilePage(photographerId) {

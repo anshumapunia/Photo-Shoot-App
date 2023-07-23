@@ -126,7 +126,7 @@ form.addEventListener("submit", async (e) => {
     });
     const res = await req.json();
     if (res.ok) {
-        window.location.href = `./payment.html?id=${photographer}&time=${hours}`
+        window.location.href = `./HTML/payment.html?id=${photographer}&time=${hours}`
     } else {
         Swal.fire({
             icon: "error",
@@ -190,7 +190,7 @@ if (isUserName) {
     singupTag.style.display = "none"
     loginTag.textContent = "Hi," + " " + isUserName
     loginTag.style.color = "#dd4545"
-    loginTag.setAttribute("href", "./userDashboard.htmll");
+    loginTag.setAttribute("href", "./userDashboard.html");
 } else {
     singupTag.style.display = "block"
     loginTag.textContent = "Login"
