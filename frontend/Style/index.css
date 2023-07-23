@@ -513,7 +513,10 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
-
+  .steps_to_book {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-links ul li,
   .footer-social ul li {
     margin: 10px 0;
@@ -531,7 +534,21 @@ input[type="submit"]:hover {
     width: 80px;
     height: 80px;
   }
+  .pixo {
+    display: flex;
+    flex-direction: column;
+  }
+  .zero {
+     display: flex;
+     flex-direction: column;
+  }
+  .flexer{
+    display: flex;
+    flex-direction: column;
 }
+}
+
+
 
 
 
@@ -545,7 +562,18 @@ input[type="submit"]:hover {
         cursor: pointer;
         margin-left: 10px;
     }
-
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .zero {
+        display: flex;
+        flex-direction: column;
+     }
+    .steps_to_book{
+        display: flex;
+        flex-direction: column;
+      }
     .hamburger .line {
         width: 100%;
         height: 2px;
@@ -644,7 +672,17 @@ input[type="submit"]:hover {
         margin-right: 10%;
         font-size: small;
     }
+    .pixo {
+        display: flex;
+        flex-direction: column;
+      }
+      .flexer{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
 
 /* Media query for small screens */
 @media screen and (min-width: 100px) and (max-width:500px) {
@@ -659,7 +697,26 @@ input[type="submit"]:hover {
         cursor: pointer;
         margin-left: 10px;
     }
-
+    .flexer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .zero {
+        display: flex;
+        flex-direction: column;
+     }
+    .steps_to_book {
+        display: flex;
+        flex-direction: column;
+      }
+      .pixo {
+        display: flex;
+        flex-direction: column;
+      }
     .hamburger .line {
         width: 100%;
         height: 2px;
@@ -694,8 +751,7 @@ input[type="submit"]:hover {
         width: 230px;
     }
 
-    .steps_to_book,
-    .index_reviews {
+    .steps_to_book,.index_reviews {
         width: fit-content;
     }
 
