@@ -3,7 +3,7 @@ const { UserModel } = require("../models/user.model");
 const BookingRouter = express.Router();
 const { BookingModel } = require("../models/booking.model")
 const { NotificationModel } = require("../models/notification.model")
-const { MeetingModel } = require("../models/meeting.model");
+
 const { authMiddleWare } = require("../middlewares/auth")
 const { checkRole } = require("../routes/user.route")
 const moment = require("moment");
