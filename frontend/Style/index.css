@@ -156,6 +156,7 @@ form{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
+    background-image: url("https://img.freepik.com/free-vector/elegant-business-shapes-transparent-background_1361-727.jpg?w=2000");
 }
 form:hover{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -190,21 +191,21 @@ select option {
 .overlay_booking{
     margin-top: 80px;
     margin-left: 250px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
     margin-bottom: 280px;
     width: 600px;
     /* border: red solid 4px; */
     /* border-radius: 550px; */
     /* border-top-left-radius: 280px; */
     /* border-bottom-right-radius: 280px; */
-    background-image: url("https://img.freepik.com/free-vector/elegant-business-shapes-transparent-background_1361-727.jpg?w=2000");
+    /* background-image: url("https://img.freepik.com/free-vector/elegant-business-shapes-transparent-background_1361-727.jpg?w=2000"); */
     /* margin-bottom: 560px; */
 }
 .overlay_booking:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(2, 2, 246, 0.25) 0px 30px 60px -12px inset, rgba(18, 99, 238, 0.3) 0px 18px 36px -18px inset;
 }
 .overlay_booking h1{
-    color: rgba(2, 90, 128, 0.654);
+    color: rgba(9, 6, 195, 0.885);
     font-weight:800;
 }
 .overlay_booking input[type="submit"] {
@@ -229,7 +230,7 @@ input[type="submit"]:hover {
     position: absolute;
     top: 140px;
     left: 12%;
-    background-color: rgba(255, 255, 255, 0.446);
+    /* background-color: rgba(255, 255, 255, 0.446); */
     border-radius: 3px;
 }
 
@@ -362,16 +363,19 @@ input[type="submit"]:hover {
 
 .footer {
   /* background-color: #222; */
-  background-color:rgba(219, 195, 195, 0.762);
-
+  background-color:rgba(203, 218, 249, 0.762);
+  margin-top: 20px;
   color: #fbfbfb;
   padding: 30px 0;
+  /* border: 2px green solid; */
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  /* border: red solid 2px; */
+  margin-top: -30px;
 }
 
 .footer-content {
@@ -379,12 +383,20 @@ input[type="submit"]:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  /* border: 5px solid blue; */
 }
-
+.footer-logo{
+    /* border: 5px greenyellow solid; */
+    margin-top: -170px;
+}
 .footer-logo img {
   height: 50px;
+  margin-top: -500px;
 }
 
+.footer-logo img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .footer-links ul {
   list-style: none;
   margin: 0;
@@ -406,10 +418,13 @@ input[type="submit"]:hover {
 }
 
 .footer-links ul li a:hover {
-   text-decoration: underline #fb07aaa7 ;
+   text-decoration: underline #013755a7 ;
   text-decoration-thickness: 5px; ;
 }
-
+.footer-social {
+    /* border: 5px solid yellow; */
+    margin-top: -210px;
+}
 .footer-social ul {
   list-style: none;
   margin: 0;
@@ -422,13 +437,13 @@ input[type="submit"]:hover {
 }
 
 .footer-social ul li a {
-  color: rgb(48, 47, 47);
+  color: rgb(118, 77, 239);
   font-size: 30px;
   transition: color 0.3s ease;
 }
 
 .footer-social ul li a:hover {
-  color: #fb07aaa7;
+  color: #046e80a7;
 }
 
 .footer-info {
@@ -474,12 +489,20 @@ input[type="submit"]:hover {
   height: 100px;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-top-left-radius:50px ;
+  border-bottom-right-radius:50px ;
   transition: transform 0.3s ease;
 }
 
 .gallery-images img:hover {
   transform: scale(1.1);
+  /* border-top-left-radius:20px ; */
+  /* border-bottom-right-radius:20px ; */
+  border-top-right-radius: 50px;
+  border-bottom-left-radius:50px ;
+  border-top-left-radius:0px ;
+  border-bottom-right-radius:0px ;
 }
 
 /* Responsive Styles */
@@ -560,8 +583,8 @@ input[type="submit"]:hover {
         padding: 2rem;
         position: static;
         margin: auto;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        background-color: rgba(255, 255, 255, 0.446);
+        /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+        /* background-color: rgba(255, 255, 255, 0.446); */
         border-radius: 3px;
     }
 
