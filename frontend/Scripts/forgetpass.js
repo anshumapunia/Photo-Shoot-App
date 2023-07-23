@@ -1,4 +1,4 @@
-const BaseUrl_forgotPassword = `https://pic-perfect.onrender.com`;
+const BaseUrl_forgotPassword = `http://localhost:8080`;
 
 var form1 = document.getElementById("raj-form1");
 var form2 = document.getElementById("raj-form2");

@@ -1,7 +1,7 @@
 const dropZone = document.getElementById("dropZone");
 const uploadForm = document.getElementById("uploadForm");
 const detailsForm = document.getElementById("details_Form");
-const url = "https://pic-perfect.onrender.com";
+const url = "http://localhost:8080";
 // prevent default drag behaviors
 if (dropZone) {
   ["dragenter", "dragover", "dragleave", "drop"].forEach((eventName) => {

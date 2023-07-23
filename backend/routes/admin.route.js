@@ -3,7 +3,7 @@ const adminrouter=express.Router()
 
 const {adminmodel}=require("../models/admin.model")
 
-adminrouter.post("addadmin",async(req,res)=>{
+adminrouter.post("/addadmin",async(req,res)=>{
     try {
         const data=req.body
         const newadmin=new adminmodel(data)
