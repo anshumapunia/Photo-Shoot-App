@@ -197,7 +197,7 @@ footer {
   padding: 14px 0;
   justify-content: space-around;
   background-color:rgb(2, 212, 206);
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 footer div {

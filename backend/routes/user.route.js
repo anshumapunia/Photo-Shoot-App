@@ -4,7 +4,7 @@ const { Image } = require("../models/image.model");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 // const passport = require("passport");
-const nodemailer = require("nodemailer");
+
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 const tokenList = {};
@@ -26,6 +26,7 @@ const checkRole = (role) => {
     next();
   };
 };
+
 
 //Route for uploading the images
 userRoute.post(

@@ -8,7 +8,8 @@ const { userRoute } = require("./routes/user.route");
 
 
 const { BookingRouter } = require("./routes/booking.route");
-const { authRoute } = require("./routes/auth.route");
+
+
 
 const cors = require("cors");
 const { authMiddleWare } = require("./middlewares/auth");
@@ -29,7 +30,7 @@ app.get("/", async (req, res) => {
 // app.use(authMiddleWare)
 app.use("/user", userRoute);
 app.use("/admin",adminrouter)
-app.use("/auth", authRoute);
+
 app.use("/book", BookingRouter);
 
 app.listen(process.env.PORT, async () => {
