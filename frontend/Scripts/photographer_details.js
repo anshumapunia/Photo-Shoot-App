@@ -52,12 +52,6 @@ if (dropZone) {
   );
 }
 
-//   // handle file selection from input
-//   document.getElementById('image').addEventListener('change', (e) => {
-//     handleFiles(e.target.files);
-//   }, false);
-
-// handle files and add them to FormData object
 async function handleFiles(files) {
   const formData = new FormData(uploadForm);
   for (let i = 0; i < files.length; i++) {
@@ -82,31 +76,6 @@ async function handleFiles(files) {
       console.error(error);
     });
 }
-// async function handleFiles(files) {
-//   console.log("form");
-//   const formData = new FormData(uploadForm);
-//   for (let i = 0; i < files.length; i++) {
-//     formData.append("image", files[i]);
-//   }
-//   // send formData using fetch API
-//   const token = localStorage.getItem("token");
-
-//   try {
-//     const response = await fetch(`${url}/user/upload`, {
-//       method: "POST",
-//       headers: {
-//         Authorization: `Bearer ${token}`, // include 'Bearer' before the token
-//         "Content-Type": "multipart/form-data",
-//       },
-//       body: formData,
-//     });
-
-//     const data = await response.json();
-//     console.log("Success:", data);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
 
 detailsForm.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -139,7 +108,7 @@ detailsForm.addEventListener("submit", async (e) => {
       "success"
     );
     setTimeout(() => {
-      window.location.href = "../HTML/photographerDashboard.html";
+      window.location.href = "./photographerDashboard.html";
     }, 2500);
   }
 });
@@ -165,7 +134,7 @@ if (isUserName) {
   singupTag.style.display = "none";
   loginTag.textContent = "Hi," + " " + isUserName;
   loginTag.style.color = "#dd4545";
-  loginTag.setAttribute("href", "../HTML/userDashboard.html");
+  loginTag.setAttribute("href", "./userDashboard.html");
 } else {
   singupTag.style.display = "block";
   loginTag.textContent = "Login";

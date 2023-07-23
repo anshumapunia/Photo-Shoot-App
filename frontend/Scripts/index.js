@@ -8,15 +8,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-// var signupLink = document.getElementById("signup-link");
-// var dropdownMenu = document.getElementById("dropdown-menu");
-
-// signupLink.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     dropdownMenu.style.display = (dropdownMenu.style.display === "none") ? "block" : "none";
-// });
-
 var HamBurger = document.getElementById("hamburger");
 var navContents = document.querySelector(".nav-contents");
 
@@ -42,7 +33,7 @@ form.addEventListener("submit", (event) => {
         place: place.value
     }
     localStorage.setItem("search", JSON.stringify(obj));
-    window.location.href = `../HTML/photographers.html`;
+    window.location.href = `./photographers.html`;
     
 })
 
@@ -57,7 +48,7 @@ if(isUserName){
     singupTag.style.display = "none"
     loginTag.textContent = "Hi," + " " + isUserName
     loginTag.style.color = "#dd4545"
-    loginTag.setAttribute("href","../HTML/Dashboard.html");
+    loginTag.setAttribute("href","./Dashboard.html");
 }else{
     singupTag.style.display = "block"
     loginTag.textContent = "Login"

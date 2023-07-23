@@ -275,5 +275,5 @@ let isUserName = localStorage.getItem("userName")
 
 loginTag.textContent = "Hi," + " " + isUserName
 loginTag.style.color = "#dd4545"
-loginTag.setAttribute("href","../HTML/userDashboard.html");
+loginTag.setAttribute("href","./userDashboard.html");
 

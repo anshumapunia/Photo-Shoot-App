@@ -13,7 +13,7 @@ body{
 
 body::after {
     content: "";
-    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-realistic-elements_23-2149154117.jpg?size=626&ext=jpg&ga=GA1.1.467505643.1667761873&semt=ais");
+    background-image: url("https://banner2.cleanpng.com/20180326/utw/kisspng-long-exposure-photography-photographer-photo-camera-5ab9074c9beaa9.1039790915220754686387.jpg");
     background-size: cover;
     background-position: center center;
     position: fixed;
@@ -28,59 +28,32 @@ body::after {
 }
 
 
-/* Nav Bar */
-/* nav{
-    display: flex;
-    position: sticky;
-    top: 0;
-    height: 50px;
-    padding: 10px;
-    margin-bottom: 50px;
-    z-index: 10;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: #fff;
-}
-nav > div{
-    display: flex;
-}
-nav > div:nth-child(2){
-    margin-left: auto;
-    width: 20%;
-    justify-content: space-evenly;
-    
-}
-nav > div:nth-child(1){
-    width: 30%;
-    justify-content: space-between;
-}
-nav img{
-    height: 100%;
-    width: 100%;
-} */
-
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(14, 14, 14, 0.72);
+    background-color:rgb(212, 126, 173) ;
     margin-bottom: 50px;
     height: 60px;
     position: sticky;
     z-index: 2;
+    gap:10rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 .logo_name>a>img {
-    width: 70%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
 }
 #logout2{
     display: flex;
 }
+
+
 #logout2 img{
-    margin-left: 50px;
-    height: 50px;
-    width: 50px;
+    margin-left: 200px;
+    height: 60px;
+    width: 60px;
 }
 /* nav.scrolled {
     background-color: #dd4545;
@@ -90,7 +63,7 @@ nav {
 
 .nav-contents {
     display: flex;
-    gap: 3rem;
+    gap: 8rem;
 }
 
 .nav-contents>a:hover {
@@ -108,14 +81,15 @@ nav {
     padding: 10px 10px;
     border: none;
     border-radius: 50px;
-    color: #fff;
+    color: rgb(227, 51, 68);
     font-weight: 400;
-    background-color: #dd45bfcd;
+    background-color: rgb(49, 208, 191);
     font-size: 20px;
 }
 #logout:hover{
     cursor: pointer;
-    background-color: #eac7ebf0;
+    background-color: rgb(205, 74, 86);
+    color:rgb(96, 192, 244);
 }
 #name {
     display: flex;
@@ -154,7 +128,7 @@ nav {
     height: 500px;
     overflow: auto;
     padding: 30px 0px ;
-    background-color: #ffffffc5;
+    background-color: rgb(213, 146, 96);
 }
 
 table{
