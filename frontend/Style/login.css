@@ -8,7 +8,7 @@ body, html {
 
 body::after {
   content: "";
-  background-image: url("https://img.freepik.com/premium-photo/top-view-flat-lay-film-camera-case-lies-black-table-notebooks-pen-concept-workspace-artist-photographer-advertising-space_250014-360.jpg?w=1060");
+  background-image: url("https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   background-position: center center;
   position: fixed;
