@@ -233,6 +233,7 @@ userRoute.post("/login", async (req, res) => {
         .status(401)
         .json({ msg: "User with this email not found", ok: false });
     }
+    
     const isPasswordSame = await bcrypt.compare(pass, user.pass);
     console.log(isPasswordSame);
     if (!isPasswordSame) {
@@ -422,6 +423,8 @@ userRoute.patch(
     }
   }
 );
+
+
 userRoute.use(
   session({
     secret: "dancingCar",
@@ -429,6 +432,7 @@ userRoute.use(
     saveUninitialized: false,
   })
 );
+
 userRoute.post("/logout", (req, res) => {
   req.session.destroy((err) => {
     if (err) {

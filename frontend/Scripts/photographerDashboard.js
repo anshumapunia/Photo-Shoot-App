@@ -9,7 +9,7 @@ boxes.forEach(box => {
     })
 });
 
-const URL = `https://pic-perfect.onrender.com`;
+const URL = `http://localhost:8080`;
 const token = localStorage.getItem("token");
 const id = localStorage.getItem("id");
 const queueId = document.getElementById("queue");

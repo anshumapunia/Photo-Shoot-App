@@ -1,6 +1,6 @@
 let container = document.getElementById('search-results')
 // Fetch the images data from the server
-const url = "https://pic-perfect.onrender.com";
+const url = "http://localhost:8080";
 console.log("hii")
 async function fetchData() {
     try {

@@ -1,5 +1,5 @@
 const express = require("express");
-const { connection , createRedisClient} = require("./config/db");
+const { connection } = require("./config/db");
 
 const { adminrouter } = require("./routes/admin.route");
 
@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// app.use("/admin",adminrouter)
+
 
 app.get("/", async (req, res) => {
   try {
@@ -28,7 +28,7 @@ app.get("/", async (req, res) => {
 });
 // app.use(authMiddleWare)
 app.use("/user", userRoute);
-
+app.use("/admin",adminrouter)
 app.use("/auth", authRoute);
 app.use("/book", BookingRouter);
 
@@ -37,19 +37,8 @@ app.listen(process.env.PORT, async () => {
     await connection;
     console.log("Connected to MongoDb Database");
 
-    const redisClient = createRedisClient(); // Obtain Redis client instance
-
-    redisClient.on("connect", () => {
-      console.log("Connected to Redis Database");
-    });
-
-    redisClient.on("error", (error) => {
-      console.error("Redis connection error:", error);
-    });
-    console.log("Connected to Database");
   } catch (error) {
     console.log(error.message);
-    console.log("Database not Connected");
   }
   console.log(`Server is running at port ${process.env.PORT}`);
 });
