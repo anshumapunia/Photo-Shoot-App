@@ -68,7 +68,8 @@ Frontend on [Netlify](https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.
 ### Take a glimpse at our website
 
 #### Home Page
-(![image])
+![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/1d861080-e209-40e8-93a7-61e67963ed67)
+
 
 
 #### Photographers Dashboard
