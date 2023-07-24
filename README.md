@@ -79,15 +79,15 @@ Frontend on [Netlify](https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.
 
 #### Photographer Page
 
-![individual](![image]
-)
+![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/b0de595e-5e59-4cc8-ab28-b645e3de434c)
 
-![Signup](![image]
-)
 
-![Dashboard](![image]
-)
+![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/8cdcadf6-8b23-42c0-bb40-d13ef9bb596b)
 
-![Book a photographer](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/bcc86f40-8679-4a06-8f32-77bf7a747d98)
+
+![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/6759c2b5-8d2f-4ca0-8edd-202ba14b88ff)
+
+![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/43d55e37-5396-4122-a025-abaf6a560cb8)
+
 
 
