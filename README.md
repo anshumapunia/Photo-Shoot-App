@@ -8,10 +8,10 @@
 # Team
 
 - :woman_technologist: [Anshuma Punia][(https://www.linkedin.com/in/anshuma-punia/)]
-- :Woman_technologist: [Lovely Kumari](https://www.linkedin.com/in/shashwat-mahendra-214598163/)
-- :man_technologist: [Shubham-Pilane]()
-- :man_technologist: [Sharman Debnath](https://www.linkedin.com/in/pranay-paul-6a5220257/)
-- :man_technologist: [Rajneesh Yadav](https://www.linkedin.com/in/ritesh-kothawade-800879270/)
+- :Woman_technologist: [Lovely Kumari]
+- :man_technologist: [Shubham-Pilane]
+- :man_technologist: [Sharman Debnath]
+- :man_technologist: [Rajneesh Yadav]
 
 
 ## Features & Pages : page_facing_up:
@@ -68,24 +68,23 @@ Frontend on [Netlify](https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.
 ### Take a glimpse at our website
 
 #### Home Page
-![index](![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/63ae1275-7ead-441d-b329-43867d435dca)
-)
+(![image])
 
 
 #### Photographers Dashboard
-![photogrpahers](![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/bf02476a-1e78-4704-a696-7a4ca865082c)
+![photogrpahers](![image]
 )
 
 
 #### Photographer Page
 
-![individual](![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/1ac6c96e-a235-4cfc-a430-073bf90a49f1)
+![individual](![image]
 )
 
-![Signup](![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/bc773887-877a-4300-b27d-ed53ea4fc1ae)
+![Signup](![image]
 )
 
-![Dashboard](![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/bfc73774-946d-42b8-8858-8818b631aafc)
+![Dashboard](![image]
 )
 
 ![Book a photographer](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/bcc86f40-8679-4a06-8f32-77bf7a747d98)
