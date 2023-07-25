@@ -90,7 +90,7 @@ Frontend on [Netlify](https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.
 ![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/43d55e37-5396-4122-a025-abaf6a560cb8)
 
 
-Deployed Link:https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.netlify.app/
+Deployed Link: https://snapshot-ruddy.vercel.app/
 
 
 
