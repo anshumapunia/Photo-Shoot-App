@@ -1,4 +1,4 @@
-# Logo of our SnapShoot website is 
+# Logo of our SnapShot website is 
 ![image](https://github.com/anshumapunia/sleek-circle-8356/assets/112821956/eb66f307-06db-488b-a2cb-d636d9177a35)
 
 # SnapShoot
