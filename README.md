@@ -46,7 +46,7 @@ If you are a professional or aspiring photographer, you have the opportunity to 
 
 ### Deloployed Links
 Backend on [Render](https://pic-perfect.onrender.com) <br>
-Frontend on [Netlify](https://649477dd681c054f6c29689b--splendid-tapioca-a964c8.netlify.app/)
+Frontend on [Netlify](https://64ef70a36f3d33157690d4fd--chipper-zuccutto-0bb7ee.netlify.app/)
 
 ## 🏷️ Tech Stack Used:-
 
